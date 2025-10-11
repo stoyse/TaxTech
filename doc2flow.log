@@ -1,0 +1,1746 @@
+2025-10-11 15:42:57,510 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 15:42:57,511 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 15:42:57,511 - __main__ - INFO - ================================================================================
+2025-10-11 15:42:57,511 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 15:42:57,512 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 15:42:57,512 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:42:57,512 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:42:57,512 - __main__ - INFO - File type detected: md
+2025-10-11 15:42:57,512 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 15:42:57,512 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 15:42:57,512 - __main__ - INFO - Getting AI configuration...
+2025-10-11 15:42:57,512 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_tokens=4000
+2025-10-11 15:42:57,512 - __main__ - INFO - Getting AI client...
+2025-10-11 15:42:57,513 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 15:42:57,513 - __main__ - INFO - API key found (length: 164)
+2025-10-11 15:42:57,520 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 15:42:57,521 - __main__ - INFO - Loading system prompt...
+2025-10-11 15:42:57,521 - __main__ - INFO - System prompt loaded: 2201 characters
+2025-10-11 15:42:57,521 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 15:42:57,521 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 15:42:57,521 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 15:42:57,521 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 15:43:32,541 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 15:43:32,671 - __main__ - INFO - API call successful!
+2025-10-11 15:43:32,671 - __main__ - INFO - Response ID: chatcmpl-CPUA6xPykEJCWQYG1GrVIUHMwGJ4b
+2025-10-11 15:43:32,672 - __main__ - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 15:43:32,672 - __main__ - INFO - Tokens used - prompt: 2224, completion: 4000, total: 6224
+2025-10-11 15:43:32,672 - __main__ - INFO - Raw response length: 12780 characters
+2025-10-11 15:43:32,672 - __main__ - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             targetNamespace="ht
+2025-10-11 15:43:32,672 - __main__ - INFO - Removing ```xml markdown wrapper
+2025-10-11 15:43:32,672 - __main__ - INFO - Cleaned BPMN XML length: 12773 characters
+2025-10-11 15:43:32,672 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             targetNamespace="http://bp
+2025-10-11 15:43:32,672 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 15:43:32,672 - __main__ - INFO - ================================================================================
+2025-10-11 15:43:32,672 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 15:46:32,549 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:46:32,549 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:46:40,715 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:46:40,715 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:46:42,067 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 15:46:42,068 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 15:46:42,069 - __main__ - INFO - ================================================================================
+2025-10-11 15:46:42,069 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 15:46:42,069 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 15:46:42,069 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:46:42,070 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:46:42,070 - __main__ - INFO - File type detected: md
+2025-10-11 15:46:42,070 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 15:46:42,070 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 15:46:42,070 - __main__ - INFO - Getting AI configuration...
+2025-10-11 15:46:42,070 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_tokens=4000
+2025-10-11 15:46:42,071 - __main__ - INFO - Getting AI client...
+2025-10-11 15:46:42,071 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 15:46:42,071 - __main__ - INFO - API key found (length: 164)
+2025-10-11 15:46:42,081 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 15:46:42,081 - __main__ - INFO - Loading system prompt...
+2025-10-11 15:46:42,082 - __main__ - INFO - System prompt loaded: 2201 characters
+2025-10-11 15:46:42,082 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 15:46:42,082 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 15:46:42,082 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 15:46:42,082 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 15:46:43,711 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:46:43,712 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:46:52,310 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 15:46:52,310 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 15:46:52,311 - __main__ - INFO - ================================================================================
+2025-10-11 15:46:52,312 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 15:46:52,312 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 15:46:52,312 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:46:52,312 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:46:52,312 - __main__ - INFO - File type detected: md
+2025-10-11 15:46:52,312 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 15:46:52,312 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 15:46:52,313 - __main__ - INFO - Getting AI configuration...
+2025-10-11 15:46:52,313 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_tokens=4000
+2025-10-11 15:46:52,313 - __main__ - INFO - Getting AI client...
+2025-10-11 15:46:52,313 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 15:46:52,313 - __main__ - INFO - API key found (length: 164)
+2025-10-11 15:46:52,320 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 15:46:52,320 - __main__ - INFO - Loading system prompt...
+2025-10-11 15:46:52,320 - __main__ - INFO - System prompt loaded: 2201 characters
+2025-10-11 15:46:52,320 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 15:46:52,320 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 15:46:52,320 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 15:46:52,320 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 15:47:11,111 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 15:47:11,114 - __main__ - INFO - API call successful!
+2025-10-11 15:47:11,114 - __main__ - INFO - Response ID: chatcmpl-CPUDs8yPoMF4pYZfCwW0D7g00yzWu
+2025-10-11 15:47:11,114 - __main__ - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 15:47:11,114 - __main__ - INFO - Tokens used - prompt: 2224, completion: 2349, total: 4573
+2025-10-11 15:47:11,114 - __main__ - INFO - Raw response length: 6904 characters
+2025-10-11 15:47:11,114 - __main__ - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definitions_1"
+             targetNamespace="http://example.org/bpmn">
+  <process id="Rechnungseingangsprozess" name="Rechnungseingangsprozess" isExecutable="true">
+    <startEv
+2025-10-11 15:47:11,114 - __main__ - INFO - Removing ```xml markdown wrapper
+2025-10-11 15:47:11,114 - __main__ - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 15:47:11,114 - __main__ - INFO - Cleaned BPMN XML length: 6893 characters
+2025-10-11 15:47:11,114 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definitions_1"
+             targetNamespace="http://example.org/bpmn">
+  <process id="Rechnungseingangsprozess" name="Rechnungseingangsprozess" isExecutable="true">
+    <startEvent id=
+2025-10-11 15:47:11,114 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 15:47:11,114 - __main__ - INFO - ================================================================================
+2025-10-11 15:47:11,114 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 15:47:11,115 - __main__ - INFO - [BUTTON] Stored workflow length: 6893 characters
+2025-10-11 15:47:11,116 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 15:47:11,162 - __main__ - INFO - [VIEWER] Using workflow - length: 6893 characters
+2025-10-11 15:47:11,162 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http...
+2025-10-11 15:47:11,162 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 15:47:11,163 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 6893
+2025-10-11 15:47:11,163 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+ ...
+2025-10-11 15:47:11,163 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 15:47:16,639 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 15:47:16,703 - __main__ - INFO - API call successful!
+2025-10-11 15:47:16,703 - __main__ - INFO - Response ID: chatcmpl-CPUDjhvUomK8Hch7zt2onlpy8eRhs
+2025-10-11 15:47:16,704 - __main__ - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 15:47:16,704 - __main__ - INFO - Tokens used - prompt: 2224, completion: 4000, total: 6224
+2025-10-11 15:47:16,704 - __main__ - INFO - Raw response length: 12634 characters
+2025-10-11 15:47:16,704 - __main__ - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definition"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="InvoiceProcessing" isExe
+2025-10-11 15:47:16,704 - __main__ - INFO - Removing ```xml markdown wrapper
+2025-10-11 15:47:16,704 - __main__ - INFO - Cleaned BPMN XML length: 12627 characters
+2025-10-11 15:47:16,704 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definition"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="InvoiceProcessing" isExecutable
+2025-10-11 15:47:16,704 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 15:47:16,704 - __main__ - INFO - ================================================================================
+2025-10-11 15:47:16,704 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 15:47:16,704 - __main__ - INFO - [BUTTON] Stored workflow length: 12627 characters
+2025-10-11 15:52:09,703 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:52:09,703 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:52:14,135 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:52:14,135 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:52:15,348 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 15:52:15,349 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 15:52:15,350 - __main__ - INFO - ================================================================================
+2025-10-11 15:52:15,350 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 15:52:15,351 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 15:52:15,351 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:52:15,351 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:52:15,351 - __main__ - INFO - File type detected: md
+2025-10-11 15:52:15,351 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 15:52:15,351 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 15:52:15,352 - __main__ - INFO - Getting AI configuration...
+2025-10-11 15:52:15,352 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_tokens=40000
+2025-10-11 15:52:15,352 - __main__ - INFO - Getting AI client...
+2025-10-11 15:52:15,352 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 15:52:15,352 - __main__ - INFO - API key found (length: 164)
+2025-10-11 15:52:15,360 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 15:52:15,360 - __main__ - INFO - Loading system prompt...
+2025-10-11 15:52:15,361 - __main__ - INFO - System prompt loaded: 2201 characters
+2025-10-11 15:52:15,361 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 15:52:15,361 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 15:52:15,361 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 15:52:15,361 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 15:52:16,387 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-10-11 15:52:16,388 - __main__ - ERROR - ERROR generating BPMN: Error code: 400 - {'error': {'message': 'max_tokens is too large: 40000. This model supports at most 16384 completion tokens, whereas you provided 40000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/streamlite-test1.py", line 145, in generate_bpmn_from_documents
+    response = client.chat.completions.create(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'max_tokens is too large: 40000. This model supports at most 16384 completion tokens, whereas you provided 40000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-10-11 15:52:16,404 - __main__ - INFO - ================================================================================
+2025-10-11 15:52:16,404 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Error code: 400 - {'error': {'message': 'max_tokens is too large: 40000. This model supports at most 16384 completion tokens, whereas you provided 40000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-10-11 15:52:16,405 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:52:16,405 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:55:52,940 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:55:52,941 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:55:58,031 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:55:58,031 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 15:55:59,889 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 15:55:59,890 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 15:55:59,891 - __main__ - INFO - ================================================================================
+2025-10-11 15:55:59,891 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 15:55:59,891 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 15:55:59,892 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:55:59,892 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 15:55:59,892 - __main__ - INFO - File type detected: md
+2025-10-11 15:55:59,892 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 15:55:59,892 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 15:55:59,892 - __main__ - INFO - Getting AI configuration...
+2025-10-11 15:55:59,892 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_tokens=16384
+2025-10-11 15:55:59,892 - __main__ - INFO - Getting AI client...
+2025-10-11 15:55:59,893 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 15:55:59,893 - __main__ - INFO - API key found (length: 164)
+2025-10-11 15:55:59,908 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 15:55:59,909 - __main__ - INFO - Loading system prompt...
+2025-10-11 15:55:59,909 - __main__ - INFO - System prompt loaded: 9189 characters
+2025-10-11 15:55:59,909 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 15:55:59,909 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 15:55:59,909 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 15:55:59,909 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 15:57:01,764 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 15:57:01,766 - __main__ - INFO - API call successful!
+2025-10-11 15:57:01,766 - __main__ - INFO - Response ID: chatcmpl-CPUMibARswlhZOE3c8kt6RLKcItry
+2025-10-11 15:57:01,767 - __main__ - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 15:57:01,767 - __main__ - INFO - Tokens used - prompt: 4181, completion: 2810, total: 6991
+2025-10-11 15:57:01,767 - __main__ - INFO - Raw response length: 8198 characters
+2025-10-11 15:57:01,767 - __main__ - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpm
+2025-10-11 15:57:01,767 - __main__ - INFO - Removing ```xml markdown wrapper
+2025-10-11 15:57:01,767 - __main__ - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 15:57:01,767 - __main__ - INFO - Cleaned BPMN XML length: 8187 characters
+2025-10-11 15:57:01,767 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpmn">
+  <
+2025-10-11 15:57:01,767 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 15:57:01,767 - __main__ - INFO - ================================================================================
+2025-10-11 15:57:01,767 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 15:57:01,767 - __main__ - INFO - [BUTTON] Stored workflow length: 8187 characters
+2025-10-11 15:57:01,768 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] Using workflow - length: 8187 characters
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 8187
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 15:57:01,806 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 15:59:58,599 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 15:59:58,599 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:00:03,886 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:00:03,887 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:00:05,107 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 16:00:05,107 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 16:00:05,108 - __main__ - INFO - ================================================================================
+2025-10-11 16:00:05,108 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 16:00:05,109 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 16:00:05,109 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:00:05,109 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:00:05,109 - __main__ - INFO - File type detected: md
+2025-10-11 16:00:05,109 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 16:00:05,110 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 16:00:05,110 - __main__ - INFO - Getting AI configuration...
+2025-10-11 16:00:05,110 - __main__ - INFO - Config retrieved: model=gpt-5, temperature=0.7, max_tokens=16384
+2025-10-11 16:00:05,110 - __main__ - INFO - Getting AI client...
+2025-10-11 16:00:05,111 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 16:00:05,111 - __main__ - INFO - API key found (length: 164)
+2025-10-11 16:00:05,124 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 16:00:05,124 - __main__ - INFO - Loading system prompt...
+2025-10-11 16:00:05,125 - __main__ - INFO - System prompt loaded: 14624 characters
+2025-10-11 16:00:05,125 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 16:00:05,125 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 16:00:05,125 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 16:00:05,125 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 16:00:06,188 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-10-11 16:00:06,190 - __main__ - ERROR - ERROR generating BPMN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/streamlite-test1.py", line 145, in generate_bpmn_from_documents
+    response = client.chat.completions.create(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-10-11 16:00:06,192 - __main__ - INFO - ================================================================================
+2025-10-11 16:00:06,192 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-10-11 16:00:06,194 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:00:06,194 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:02:52,195 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:02:52,196 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:02:57,507 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:02:57,507 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:02:58,630 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 16:02:58,630 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 16:02:58,630 - __main__ - INFO - ================================================================================
+2025-10-11 16:02:58,631 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 16:02:58,631 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 16:02:58,631 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:02:58,631 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:02:58,631 - __main__ - INFO - File type detected: md
+2025-10-11 16:02:58,631 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 16:02:58,632 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 16:02:58,632 - __main__ - INFO - Getting AI configuration...
+2025-10-11 16:02:58,632 - __main__ - INFO - Config retrieved: model=gpt-4o, temperature=0.7, max_completion_tokens=16384
+2025-10-11 16:02:58,632 - __main__ - INFO - Getting AI client...
+2025-10-11 16:02:58,632 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 16:02:58,632 - __main__ - INFO - API key found (length: 164)
+2025-10-11 16:02:58,639 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 16:02:58,639 - __main__ - INFO - Loading system prompt...
+2025-10-11 16:02:58,639 - __main__ - INFO - System prompt loaded: 14624 characters
+2025-10-11 16:02:58,639 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 16:02:58,640 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 16:02:58,640 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 16:02:58,640 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 16:04:40,638 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 16:04:40,783 - __main__ - INFO - API call successful!
+2025-10-11 16:04:40,783 - __main__ - INFO - Response ID: chatcmpl-CPUTTKcEiYdNVttBp8ylU9ubZwjTR
+2025-10-11 16:04:40,783 - __main__ - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 16:04:40,783 - __main__ - INFO - Tokens used - prompt: 5870, completion: 4333, total: 10203
+2025-10-11 16:04:40,783 - __main__ - INFO - Raw response length: 12950 characters
+2025-10-11 16:04:40,783 - __main__ - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpm
+2025-10-11 16:04:40,783 - __main__ - INFO - Removing ```xml markdown wrapper
+2025-10-11 16:04:40,783 - __main__ - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 16:04:40,783 - __main__ - INFO - Cleaned BPMN XML length: 12939 characters
+2025-10-11 16:04:40,783 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpmn">
+  <
+2025-10-11 16:04:40,784 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 16:04:40,784 - __main__ - INFO - ================================================================================
+2025-10-11 16:04:40,784 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 16:04:40,784 - __main__ - INFO - [BUTTON] Stored workflow length: 12939 characters
+2025-10-11 16:04:40,786 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 16:04:40,827 - __main__ - INFO - [VIEWER] Using workflow - length: 12939 characters
+2025-10-11 16:04:40,827 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 16:04:40,827 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 16:04:40,827 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 12939
+2025-10-11 16:04:40,828 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 16:04:40,828 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 16:55:21,949 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:55:21,950 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:55:45,364 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:55:45,365 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:55:52,166 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:55:52,167 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:55:53,330 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 16:55:53,330 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 16:55:53,332 - __main__ - INFO - ================================================================================
+2025-10-11 16:55:53,332 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 16:55:53,332 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 16:55:53,332 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:55:53,332 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:55:53,332 - __main__ - INFO - File type detected: md
+2025-10-11 16:55:53,332 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 16:55:53,332 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 16:55:53,332 - __main__ - INFO - Getting AI configuration...
+2025-10-11 16:55:53,332 - __main__ - INFO - Config retrieved: model=gpt-5, temperature=0.7, max_completion_tokens=16384
+2025-10-11 16:55:53,332 - __main__ - INFO - Getting AI client...
+2025-10-11 16:55:53,332 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 16:55:53,333 - __main__ - INFO - API key found (length: 164)
+2025-10-11 16:55:53,371 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 16:55:53,371 - __main__ - INFO - Loading system prompt...
+2025-10-11 16:55:53,372 - __main__ - INFO - System prompt loaded: 14624 characters
+2025-10-11 16:55:53,372 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 16:55:53,372 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 16:55:53,372 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 16:55:53,372 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 16:55:54,817 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-10-11 16:55:54,818 - __main__ - ERROR - ERROR generating BPMN: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.7 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/streamlite-test1.py", line 165, in generate_bpmn_from_documents
+    response = client.chat.completions.create(**api_params)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.7 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-10-11 16:55:54,829 - __main__ - INFO - ================================================================================
+2025-10-11 16:55:54,829 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.7 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-10-11 16:55:54,831 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:55:54,831 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:59:53,053 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:59:53,053 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:59:57,479 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 16:59:57,480 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 16:59:58,452 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 16:59:58,452 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 16:59:58,453 - __main__ - INFO - ================================================================================
+2025-10-11 16:59:58,453 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 16:59:58,453 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 16:59:58,453 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:59:58,453 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 16:59:58,453 - __main__ - INFO - File type detected: md
+2025-10-11 16:59:58,453 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 16:59:58,453 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 16:59:58,454 - __main__ - INFO - Getting AI configuration...
+2025-10-11 16:59:58,454 - __main__ - INFO - Config retrieved: model=gpt-5, temperature=0.7, max_completion_tokens=16384
+2025-10-11 16:59:58,454 - __main__ - INFO - Getting AI client...
+2025-10-11 16:59:58,454 - __main__ - INFO - Initializing AI client for provider: openai
+2025-10-11 16:59:58,454 - __main__ - INFO - API key found (length: 164)
+2025-10-11 16:59:58,463 - __main__ - INFO - OpenAI client initialized successfully
+2025-10-11 16:59:58,463 - __main__ - INFO - Loading system prompt...
+2025-10-11 16:59:58,463 - __main__ - INFO - System prompt loaded: 14624 characters
+2025-10-11 16:59:58,464 - __main__ - INFO - Using first 7363 characters for API call
+2025-10-11 16:59:58,464 - __main__ - INFO - Calling OpenAI API...
+2025-10-11 16:59:58,464 - __main__ - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 16:59:58,464 - __main__ - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 16:59:58,464 - __main__ - INFO - Model gpt-5 does not support 'temperature'; omitting parameter.
+2025-10-11 17:01:20,052 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:01:20,052 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:01:25,184 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:01:25,184 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:01:26,009 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:01:26,010 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:01:26,011 - __main__ - INFO - ================================================================================
+2025-10-11 17:01:26,011 - __main__ - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:01:26,011 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:01:26,011 - __main__ - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:01:26,011 - __main__ - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:01:26,011 - __main__ - INFO - File type detected: md
+2025-10-11 17:01:26,011 - __main__ - INFO - Extracted 7252 characters from md file
+2025-10-11 17:01:26,011 - __main__ - INFO - Total combined text length: 7363 characters
+2025-10-11 17:01:26,011 - __main__ - INFO - Getting AI configuration...
+2025-10-11 17:01:26,011 - __main__ - ERROR - ERROR generating BPMN: 'temperature'
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/streamlite-test1.py", line 112, in generate_bpmn_from_documents
+    logger.info(f"Config retrieved: model={config['model']}, temperature={config['temperature']}, {token_limit_key}={token_limit}")
+KeyError: 'temperature'
+2025-10-11 17:01:26,017 - __main__ - INFO - ================================================================================
+2025-10-11 17:01:26,017 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: 'temperature'
+2025-10-11 17:01:26,020 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:01:26,020 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:07:00,793 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:07:00,936 - __main__ - INFO - API call successful!
+2025-10-11 17:07:00,936 - __main__ - INFO - Response ID: chatcmpl-CPVMd3vrRq5aKFul9kNKtNOKdKgyp
+2025-10-11 17:07:00,936 - __main__ - INFO - Model used: gpt-5-2025-08-07
+2025-10-11 17:07:00,936 - __main__ - INFO - Tokens used - prompt: 5869, completion: 16085, total: 21954
+2025-10-11 17:07:00,936 - __main__ - INFO - Raw response length: 22320 characters
+2025-10-11 17:07:00,936 - __main__ - INFO - Raw response preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_Rechnungseingang"
+                  targetNamespace="http://bpmn.io/sc
+2025-10-11 17:07:00,937 - __main__ - INFO - Cleaned BPMN XML length: 22320 characters
+2025-10-11 17:07:00,937 - __main__ - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_Rechnungseingang"
+                  targetNamespace="http://bpmn.io/sc
+2025-10-11 17:07:00,937 - __main__ - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:07:00,937 - __main__ - INFO - ================================================================================
+2025-10-11 17:07:00,937 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 17:07:00,937 - __main__ - INFO - [BUTTON] Stored workflow length: 22320 characters
+2025-10-11 17:09:46,492 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:09:46,493 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:09:46,508 - ai_service - INFO - OpenAI client initialized successfully
+2025-10-11 17:09:46,526 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:09:46,527 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:09:51,953 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:09:51,954 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:09:53,474 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:09:53,475 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:09:53,475 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:09:53,475 - document_processor - INFO - Processing 1 files
+2025-10-11 17:09:53,475 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:09:53,475 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:09:53,475 - document_processor - INFO - File type detected: md
+2025-10-11 17:09:53,476 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:09:53,476 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:09:53,476 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:09:53,476 - ai_service - INFO - ================================================================================
+2025-10-11 17:09:53,476 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:09:53,476 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:09:53,476 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:09:53,476 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:09:53,476 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:09:53,476 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:09:53,477 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:09:53,477 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:09:53,477 - ai_service - INFO - Added max_completion_tokens: 16384
+2025-10-11 17:09:53,477 - ai_service - INFO - Calling openai API...
+2025-10-11 17:12:25,399 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:12:25,402 - ai_service - INFO - API call successful!
+2025-10-11 17:12:25,403 - ai_service - INFO - Response ID: chatcmpl-CPVWERT8qWw58waBrIb7UXpngphJ3
+2025-10-11 17:12:25,403 - ai_service - INFO - Model used: gpt-5-2025-08-07
+2025-10-11 17:12:25,403 - ai_service - INFO - Tokens used - prompt: 5868, completion: 15306, total: 21174
+2025-10-11 17:12:25,403 - ai_service - INFO - Raw response length: 22122 characters
+2025-10-11 17:12:25,403 - ai_service - INFO - Raw response preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_Rechnungseingang"
+                  targetNamespace="http://bpmn.io/sc
+2025-10-11 17:12:25,403 - ai_service - INFO - Cleaned BPMN XML length: 22122 characters
+2025-10-11 17:12:25,403 - ai_service - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_Rechnungseingang"
+                  targetNamespace="http://bpmn.io/sc
+2025-10-11 17:12:25,403 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:12:25,403 - ai_service - INFO - ================================================================================
+2025-10-11 17:12:25,403 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 17:12:25,403 - __main__ - INFO - [BUTTON] Stored workflow length: 22122 characters
+2025-10-11 17:12:25,404 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 17:12:25,463 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:12:25,463 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:12:25,469 - ai_service - INFO - OpenAI client initialized successfully with 60s timeout
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] Using workflow - length: 22122 characters
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 22122
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 17:12:25,473 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 17:15:58,549 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:15:58,549 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:15:58,558 - ai_service - INFO - OpenAI client initialized successfully with 60s timeout
+2025-10-11 17:15:58,564 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:15:58,564 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:16:05,056 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:16:05,057 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:16:05,880 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:16:05,881 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:16:05,882 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:16:05,882 - document_processor - INFO - Processing 1 files
+2025-10-11 17:16:05,882 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:16:05,882 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:16:05,882 - document_processor - INFO - File type detected: md
+2025-10-11 17:16:05,882 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:16:05,882 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:16:05,882 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:16:05,882 - ai_service - INFO - ================================================================================
+2025-10-11 17:16:05,882 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:16:05,882 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:16:05,882 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:16:05,883 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:16:05,883 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:16:05,884 - ai_service - INFO - Loaded BPMN 2.0 schema: 188228 characters
+2025-10-11 17:16:05,885 - ai_service - INFO - Loaded BPMN DI schema: 14604 characters
+2025-10-11 17:16:05,885 - ai_service - INFO - Enhanced system prompt with schemas: 24786 characters total
+2025-10-11 17:16:05,885 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:16:05,885 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:16:05,885 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:16:05,885 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:16:05,885 - ai_service - INFO - Added max_completion_tokens: 16384
+2025-10-11 17:16:05,885 - ai_service - INFO - Calling openai API...
+2025-10-11 17:17:05,938 - openai._base_client - INFO - Retrying request to /chat/completions in 0.409040 seconds
+2025-10-11 17:18:06,426 - openai._base_client - INFO - Retrying request to /chat/completions in 0.779594 seconds
+2025-10-11 17:19:07,265 - ai_service - ERROR - ERROR generating BPMN: Request timed out.
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 982, in request
+    response = self._client.send(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/ai_service.py", line 203, in generate_bpmn_from_text
+    response = self.client.chat.completions.create(**api_params)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1000, in request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+2025-10-11 17:19:07,294 - ai_service - INFO - ================================================================================
+2025-10-11 17:19:07,295 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Request timed out.
+2025-10-11 17:19:07,296 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:19:07,296 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:24:41,751 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:24:41,752 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:24:41,762 - ai_service - INFO - OpenAI client initialized successfully with 120s timeout
+2025-10-11 17:24:41,769 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:24:41,770 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:24:45,713 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:24:45,714 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:24:46,773 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:24:46,773 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:24:46,774 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:24:46,774 - document_processor - INFO - Processing 1 files
+2025-10-11 17:24:46,775 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:24:46,775 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:24:46,775 - document_processor - INFO - File type detected: md
+2025-10-11 17:24:46,775 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:24:46,775 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:24:46,775 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:24:46,775 - ai_service - INFO - ================================================================================
+2025-10-11 17:24:46,775 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:24:46,775 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:24:46,775 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:24:46,776 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:24:46,776 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:24:46,777 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:24:46,778 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:24:46,778 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:24:46,778 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:24:46,778 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:24:46,778 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:24:46,778 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:24:46,778 - ai_service - INFO - Model gpt-5 does not support 'temperature'; omitting parameter.
+2025-10-11 17:24:46,778 - ai_service - INFO - Added max_completion_tokens: 16384
+2025-10-11 17:24:46,778 - ai_service - INFO - Calling openai API...
+2025-10-11 17:26:46,833 - openai._base_client - INFO - Retrying request to /chat/completions in 0.399753 seconds
+2025-10-11 17:27:01,910 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:27:01,911 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:27:01,925 - ai_service - INFO - OpenAI client initialized successfully with 120s timeout
+2025-10-11 17:27:01,934 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:27:01,934 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:27:05,027 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:27:05,029 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:27:05,659 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:27:05,660 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:27:05,661 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:27:05,661 - document_processor - INFO - Processing 1 files
+2025-10-11 17:27:05,661 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:27:05,661 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:27:05,661 - document_processor - INFO - File type detected: md
+2025-10-11 17:27:05,661 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:27:05,661 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:27:05,661 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:27:05,661 - ai_service - INFO - ================================================================================
+2025-10-11 17:27:05,661 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:27:05,661 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:27:05,661 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:27:05,662 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:27:05,662 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:27:05,663 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:27:05,664 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:27:05,664 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:27:05,664 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:27:05,664 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:27:05,664 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:27:05,664 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:27:05,664 - ai_service - INFO - Added max_completion_tokens: 16384
+2025-10-11 17:27:05,664 - ai_service - INFO - Calling openai API...
+2025-10-11 17:28:47,287 - openai._base_client - INFO - Retrying request to /chat/completions in 0.769181 seconds
+2025-10-11 17:29:05,707 - openai._base_client - INFO - Retrying request to /chat/completions in 0.409916 seconds
+2025-10-11 17:30:17,511 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:30:17,512 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:30:17,518 - ai_service - INFO - OpenAI client initialized successfully with 120s timeout
+2025-10-11 17:30:17,532 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:30:17,532 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:30:48,109 - ai_service - ERROR - ERROR generating BPMN: Request timed out.
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 982, in request
+    response = self._client.send(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/ai_service.py", line 206, in generate_bpmn_from_text
+    response = self.client.chat.completions.create(**api_params)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1000, in request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+2025-10-11 17:30:48,118 - ai_service - INFO - ================================================================================
+2025-10-11 17:30:48,118 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Request timed out.
+2025-10-11 17:31:06,161 - openai._base_client - INFO - Retrying request to /chat/completions in 0.919189 seconds
+2025-10-11 17:32:04,630 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:32:04,630 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:32:04,636 - ai_service - INFO - OpenAI client initialized successfully with 300s timeout
+2025-10-11 17:32:04,644 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:32:04,645 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:32:08,903 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:32:08,904 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:32:09,972 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:32:09,973 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:32:09,974 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:32:09,974 - document_processor - INFO - Processing 1 files
+2025-10-11 17:32:09,974 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:09,974 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:09,974 - document_processor - INFO - File type detected: md
+2025-10-11 17:32:09,974 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:32:09,974 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:09,974 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:32:09,975 - ai_service - INFO - ================================================================================
+2025-10-11 17:32:09,975 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:32:09,975 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:32:09,975 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:32:09,976 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:32:09,976 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:32:09,977 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:32:09,978 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:32:09,978 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:32:09,978 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:32:09,979 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:32:09,979 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:32:09,979 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:32:09,979 - ai_service - INFO - Added max_tokens: 4096
+2025-10-11 17:32:09,979 - ai_service - INFO - Calling openai API...
+2025-10-11 17:32:10,445 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-10-11 17:32:10,446 - ai_service - ERROR - ERROR generating BPMN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/ai_service.py", line 208, in generate_bpmn_from_text
+    response = self.client.chat.completions.create(**api_params)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-10-11 17:32:10,452 - ai_service - INFO - ================================================================================
+2025-10-11 17:32:10,452 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-10-11 17:32:10,454 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:32:10,454 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:32:52,575 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:32:52,577 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:32:52,585 - ai_service - INFO - OpenAI client initialized successfully with 300s timeout
+2025-10-11 17:32:52,591 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:32:52,591 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:32:56,334 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:32:56,335 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:32:57,496 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:32:57,496 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:32:57,497 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:32:57,497 - document_processor - INFO - Processing 1 files
+2025-10-11 17:32:57,497 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:57,497 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:57,497 - document_processor - INFO - File type detected: md
+2025-10-11 17:32:57,497 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:32:57,497 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:32:57,498 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:32:57,498 - ai_service - INFO - ================================================================================
+2025-10-11 17:32:57,498 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:32:57,498 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:32:57,498 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:32:57,498 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:32:57,498 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:32:57,499 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:32:57,499 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:32:57,499 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:32:57,500 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:32:57,500 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:32:57,500 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:32:57,500 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:32:57,500 - ai_service - INFO - Added max_completion_tokens: 4096
+2025-10-11 17:32:57,500 - ai_service - INFO - Calling openai API...
+2025-10-11 17:33:07,144 - ai_service - ERROR - ERROR generating BPMN: Request timed out.
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 982, in request
+    response = self._client.send(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/julianstosse/Developer/TaxTech/ai_service.py", line 206, in generate_bpmn_from_text
+    # Call AI API
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 1156, in create
+    return self._post(
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/julianstosse/Developer/TaxTech/venv/lib/python3.9/site-packages/openai/_base_client.py", line 1000, in request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+2025-10-11 17:33:07,152 - ai_service - INFO - ================================================================================
+2025-10-11 17:33:07,152 - __main__ - ERROR - [BUTTON] BPMN generation failed: Error generating BPMN: Request timed out.
+2025-10-11 17:34:08,550 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:34:08,551 - ai_service - INFO - API call successful!
+2025-10-11 17:34:08,551 - ai_service - INFO - Response ID: chatcmpl-CPVsYz8gom1uiaapdHnVWqWzrZD63
+2025-10-11 17:34:08,551 - ai_service - INFO - Model used: gpt-5-2025-08-07
+2025-10-11 17:34:08,551 - ai_service - INFO - Tokens used - prompt: 7100, completion: 4096, total: 11196
+2025-10-11 17:34:08,551 - ai_service - INFO - Raw response length: 0 characters
+2025-10-11 17:34:08,551 - ai_service - INFO - Raw response preview (first 500 chars):
+
+2025-10-11 17:34:08,551 - ai_service - INFO - Cleaned BPMN XML length: 0 characters
+2025-10-11 17:34:08,551 - ai_service - INFO - BPMN XML preview (first 500 chars):
+
+2025-10-11 17:34:08,551 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:34:08,551 - ai_service - INFO - ================================================================================
+2025-10-11 17:34:08,551 - __main__ - ERROR - [BUTTON] BPMN generation failed: Successfully generated BPMN workflow!
+2025-10-11 17:34:08,553 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:34:08,553 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:34:36,194 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:34:36,194 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:34:36,201 - ai_service - INFO - OpenAI client initialized successfully with 300s read timeout
+2025-10-11 17:34:36,210 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:34:36,210 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:34:40,898 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:34:40,898 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:34:41,668 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:34:41,669 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:34:41,670 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:34:41,670 - document_processor - INFO - Processing 1 files
+2025-10-11 17:34:41,670 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:34:41,670 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:34:41,670 - document_processor - INFO - File type detected: md
+2025-10-11 17:34:41,670 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:34:41,670 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:34:41,670 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:34:41,670 - ai_service - INFO - ================================================================================
+2025-10-11 17:34:41,670 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:34:41,670 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:34:41,670 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:34:41,671 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:34:41,671 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:34:41,672 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:34:41,672 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:34:41,672 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:34:41,672 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:34:41,672 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:34:41,672 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:34:41,672 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:34:41,672 - ai_service - INFO - Added max_completion_tokens: 4096
+2025-10-11 17:34:41,673 - ai_service - INFO - Calling openai API...
+2025-10-11 17:35:38,889 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:35:38,892 - ai_service - INFO - API call successful!
+2025-10-11 17:35:38,892 - ai_service - INFO - Response ID: chatcmpl-CPVuEkQCA6btpLAUxmtpGDxigrlDH
+2025-10-11 17:35:38,892 - ai_service - INFO - Model used: gpt-5-2025-08-07
+2025-10-11 17:35:38,892 - ai_service - INFO - Tokens used - prompt: 7100, completion: 4096, total: 11196
+2025-10-11 17:35:38,892 - ai_service - INFO - Raw response length: 0 characters
+2025-10-11 17:35:38,892 - ai_service - INFO - Raw response preview (first 500 chars):
+
+2025-10-11 17:35:38,892 - ai_service - INFO - Cleaned BPMN XML length: 0 characters
+2025-10-11 17:35:38,892 - ai_service - INFO - BPMN XML preview (first 500 chars):
+
+2025-10-11 17:35:38,892 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:35:38,893 - ai_service - INFO - ================================================================================
+2025-10-11 17:35:38,893 - __main__ - ERROR - [BUTTON] BPMN generation failed: Successfully generated BPMN workflow!
+2025-10-11 17:35:38,895 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:35:38,896 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:36:11,007 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:36:11,008 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:37:48,377 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:37:48,377 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:37:48,384 - ai_service - INFO - OpenAI client initialized successfully with 300s read timeout
+2025-10-11 17:37:48,391 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:37:48,391 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:37:52,817 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:37:52,817 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:37:53,541 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:37:53,542 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:37:53,542 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:37:53,542 - document_processor - INFO - Processing 1 files
+2025-10-11 17:37:53,543 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:37:53,543 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:37:53,543 - document_processor - INFO - File type detected: md
+2025-10-11 17:37:53,543 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:37:53,543 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:37:53,543 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:37:53,543 - ai_service - INFO - ================================================================================
+2025-10-11 17:37:53,543 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:37:53,543 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:37:53,544 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:37:53,544 - ai_service - INFO - System prompt loaded: 14624 characters
+2025-10-11 17:37:53,544 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:37:53,545 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:37:53,546 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:37:53,546 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:37:53,546 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:37:53,546 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:37:53,546 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:37:53,546 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:37:53,546 - ai_service - INFO - Added max_completion_tokens: 8192
+2025-10-11 17:37:53,546 - ai_service - INFO - Calling openai API...
+2025-10-11 17:38:41,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:38:41,679 - ai_service - INFO - API call successful!
+2025-10-11 17:38:41,679 - ai_service - INFO - Response ID: chatcmpl-CPVxJPXxhv6L9WaJOckIia6NamVbw
+2025-10-11 17:38:41,679 - ai_service - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 17:38:41,679 - ai_service - INFO - Tokens used - prompt: 7101, completion: 2053, total: 9154
+2025-10-11 17:38:41,679 - ai_service - INFO - Raw response length: 6212 characters
+2025-10-11 17:38:41,679 - ai_service - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpm
+2025-10-11 17:38:41,679 - ai_service - INFO - Removing ```xml markdown wrapper
+2025-10-11 17:38:41,679 - ai_service - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 17:38:41,679 - ai_service - INFO - Cleaned BPMN XML length: 6201 characters
+2025-10-11 17:38:41,679 - ai_service - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpmn">
+
+  
+2025-10-11 17:38:41,679 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:38:41,680 - ai_service - INFO - ================================================================================
+2025-10-11 17:38:41,680 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 17:38:41,680 - __main__ - INFO - [BUTTON] Stored workflow length: 6201 characters
+2025-10-11 17:38:41,681 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 17:38:41,724 - __main__ - INFO - [VIEWER] Using workflow - length: 6201 characters
+2025-10-11 17:38:41,725 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 17:38:41,725 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 17:38:41,725 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 6201
+2025-10-11 17:38:41,725 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 17:38:41,726 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 17:38:53,112 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:38:53,113 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:39:29,432 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:39:29,433 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:39:29,439 - ai_service - INFO - OpenAI client initialized successfully with 300s read timeout
+2025-10-11 17:39:29,444 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:39:29,445 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:39:30,198 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:39:30,198 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:39:30,200 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:39:30,200 - document_processor - INFO - Processing 1 files
+2025-10-11 17:39:30,200 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:39:30,200 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:39:30,200 - document_processor - INFO - File type detected: md
+2025-10-11 17:39:30,201 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:39:30,201 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:39:30,201 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:39:30,201 - ai_service - INFO - ================================================================================
+2025-10-11 17:39:30,201 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:39:30,201 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:39:30,201 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:39:30,202 - ai_service - INFO - System prompt loaded from file: 14624 characters
+2025-10-11 17:39:30,202 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:39:30,203 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:39:30,203 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:39:30,203 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:39:30,203 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:39:30,203 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:39:30,203 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:39:30,203 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:39:30,204 - ai_service - INFO - Added max_completion_tokens: 8192
+2025-10-11 17:39:30,204 - ai_service - INFO - Calling openai API...
+2025-10-11 17:40:01,959 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:40:01,963 - ai_service - INFO - API call successful!
+2025-10-11 17:40:01,963 - ai_service - INFO - Response ID: chatcmpl-CPVysppmZnrA7H7LwGwctVg2zRDLl
+2025-10-11 17:40:01,963 - ai_service - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 17:40:01,963 - ai_service - INFO - Tokens used - prompt: 7101, completion: 3271, total: 10372
+2025-10-11 17:40:01,963 - ai_service - INFO - Raw response length: 9355 characters
+2025-10-11 17:40:01,963 - ai_service - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpm
+2025-10-11 17:40:01,963 - ai_service - INFO - Removing ```xml markdown wrapper
+2025-10-11 17:40:01,963 - ai_service - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 17:40:01,963 - ai_service - INFO - Cleaned BPMN XML length: 9344 characters
+2025-10-11 17:40:01,963 - ai_service - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpmn">
+  <
+2025-10-11 17:40:01,963 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:40:01,963 - ai_service - INFO - ================================================================================
+2025-10-11 17:40:01,963 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 17:40:01,963 - __main__ - INFO - [BUTTON] Stored workflow length: 9344 characters
+2025-10-11 17:40:01,964 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 17:40:02,007 - __main__ - INFO - [VIEWER] Using workflow - length: 9344 characters
+2025-10-11 17:40:02,007 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 17:40:02,008 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 17:40:02,008 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 9344
+2025-10-11 17:40:02,008 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 17:40:02,008 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
+2025-10-11 17:45:22,726 - ai_service - INFO - Initializing AI client for provider: openai
+2025-10-11 17:45:22,727 - ai_service - INFO - API key found (length: 164)
+2025-10-11 17:45:22,735 - ai_service - INFO - OpenAI client initialized successfully with 300s read timeout
+2025-10-11 17:45:22,743 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:45:22,743 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:45:26,869 - __main__ - INFO - [VIEWER] Using workflow - length: 4636 characters
+2025-10-11 17:45:26,870 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org...
+2025-10-11 17:45:28,893 - __main__ - INFO - [BUTTON] Generate Workflow button clicked
+2025-10-11 17:45:28,894 - __main__ - INFO - [BUTTON] Files detected: ['Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md']
+2025-10-11 17:45:28,894 - __main__ - INFO - Number of uploaded files: 1
+2025-10-11 17:45:28,894 - document_processor - INFO - Processing 1 files
+2025-10-11 17:45:28,894 - document_processor - INFO - Processing file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:45:28,894 - document_processor - INFO - Extracting text from file: Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:45:28,894 - document_processor - INFO - File type detected: md
+2025-10-11 17:45:28,894 - document_processor - INFO - Extracted 7252 characters from md file
+2025-10-11 17:45:28,895 - document_processor - INFO - Successfully extracted 7252 characters from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md
+2025-10-11 17:45:28,895 - document_processor - INFO - Total combined text length: 7363 characters
+2025-10-11 17:45:28,895 - ai_service - INFO - ================================================================================
+2025-10-11 17:45:28,895 - ai_service - INFO - STARTING BPMN GENERATION PROCESS
+2025-10-11 17:45:28,895 - ai_service - INFO - Document text length: 7363 characters
+2025-10-11 17:45:28,895 - ai_service - INFO - Loading system prompt...
+2025-10-11 17:45:28,895 - ai_service - INFO - System prompt loaded from file: 14624 characters
+2025-10-11 17:45:28,895 - ai_service - INFO - Loading BPMN schema files...
+2025-10-11 17:45:28,896 - ai_service - INFO - Loaded BPMN 2.0 schema excerpt: 2000 characters
+2025-10-11 17:45:28,896 - ai_service - INFO - Loaded BPMN DI schema excerpt: 2000 characters
+2025-10-11 17:45:28,896 - ai_service - INFO - Enhanced system prompt with schemas: 18827 characters total
+2025-10-11 17:45:28,896 - ai_service - INFO - Using first 7363 characters for API call
+2025-10-11 17:45:28,896 - ai_service - INFO - System prompt preview: # Doc2Flow System Prompt
+
+You are an expert AI assistant specialized in analyzing documents and generating BPMN (Business Process Model and Notation) workflows. Your role is to help users transform th...
+2025-10-11 17:45:28,896 - ai_service - INFO - User prompt preview: Based on the following document content, analyze the business process described and generate a complete BPMN 2.0 XML workflow.
+
+Document Content:
+
+
+=== Content from Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH.md ===
+## Anforderungsheft für eine Rechnungseingangslösung der Heiss und Laut Anlagenbau GmbH Inhaltsverzeichnis
+
+1. Einleitung
+
+2. Zielsetzung
+
+3. Funktionale Anforderungen
+
+- o Import von Rechnungen
+
+- o Sachliche und steuerliche Prüfung
+
+- o Frei...
+2025-10-11 17:45:28,896 - ai_service - INFO - Preparing API parameters...
+2025-10-11 17:45:28,896 - ai_service - INFO - Added max_completion_tokens: 8192
+2025-10-11 17:45:28,896 - ai_service - INFO - Calling openai API...
+2025-10-11 17:45:54,322 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:45:54,325 - ai_service - INFO - API call successful!
+2025-10-11 17:45:54,325 - ai_service - INFO - Response ID: chatcmpl-CPW4fUD9HpZILALFZ79mPQbXpjwsF
+2025-10-11 17:45:54,325 - ai_service - INFO - Model used: gpt-4o-2024-08-06
+2025-10-11 17:45:54,325 - ai_service - INFO - Tokens used - prompt: 7101, completion: 2712, total: 9813
+2025-10-11 17:45:54,325 - ai_service - INFO - Raw response length: 8226 characters
+2025-10-11 17:45:54,325 - ai_service - INFO - Raw response preview (first 500 chars):
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpm
+2025-10-11 17:45:54,325 - ai_service - INFO - Removing ```xml markdown wrapper
+2025-10-11 17:45:54,326 - ai_service - INFO - Removing trailing ``` markdown wrapper
+2025-10-11 17:45:54,326 - ai_cleaner_service - INFO - Initializing AI cleaner client...
+2025-10-11 17:45:54,335 - ai_cleaner_service - INFO - AI cleaner client initialized successfully.
+2025-10-11 17:45:54,335 - ai_cleaner_service - INFO - ================================================================================
+2025-10-11 17:45:54,335 - ai_cleaner_service - INFO - STARTING BPMN XML CLEANING PROCESS
+2025-10-11 17:45:54,336 - ai_cleaner_service - INFO - Calling cleaner API...
+2025-10-11 17:46:07,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-11 17:46:07,164 - ai_cleaner_service - INFO - BPMN XML cleaning successful.
+2025-10-11 17:46:07,165 - ai_cleaner_service - INFO - ================================================================================
+2025-10-11 17:46:07,165 - ai_service - INFO - Cleaned BPMN XML length: 8215 characters
+2025-10-11 17:46:07,165 - ai_service - INFO - BPMN XML preview (first 500 chars):
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_1"
+                  targetNamespace="http://bpmn.io/schema/bpmn">
+
+  
+2025-10-11 17:46:07,165 - ai_service - INFO - BPMN GENERATION COMPLETED SUCCESSFULLY
+2025-10-11 17:46:07,165 - ai_service - INFO - ================================================================================
+2025-10-11 17:46:07,165 - __main__ - INFO - [BUTTON] BPMN generated successfully, storing in session state
+2025-10-11 17:46:07,165 - __main__ - INFO - [BUTTON] Stored workflow length: 8215 characters
+2025-10-11 17:46:07,166 - __main__ - INFO - [BUTTON] Triggering rerun to display new workflow
+2025-10-11 17:46:07,214 - __main__ - INFO - [VIEWER] Using workflow - length: 8215 characters
+2025-10-11 17:46:07,215 - __main__ - INFO - [VIEWER] Workflow preview (first 200 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              ...
+2025-10-11 17:46:07,215 - __main__ - INFO - [VIEWER] Rendering BPMN diagram...
+2025-10-11 17:46:07,215 - __main__ - INFO - [VIEWER] BPMN XML to render - length: 8215
+2025-10-11 17:46:07,215 - __main__ - INFO - [VIEWER] BPMN XML preview (first 300 chars): <?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.o...
+2025-10-11 17:46:07,216 - __main__ - INFO - [VIEWER] BPMN XML escaped for JavaScript
